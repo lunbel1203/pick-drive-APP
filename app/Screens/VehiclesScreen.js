@@ -2,8 +2,8 @@ import React, {useState} from 'react'
 import { StyleSheet, View, FlatList, SafeAreaView } from 'react-native'
 
 // COMPONENTS
-import Header from '../components/Header'
-import VehicleCard from '../components/VehicleCard'
+import Header from '../Components/Header'
+import VehicleCard from '../Components/VehicleCard'
 
 
 const VEHICLES = [

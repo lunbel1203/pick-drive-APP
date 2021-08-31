@@ -1,9 +1,9 @@
 import React from 'react';
 import { StatusBar } from 'react-native'
-import Navigation from './App/Navigations/Navigation';
+import Navigation from './app/Navigations/Navigation';
 
 // CONTEXT
-import { ThemeProvider } from './App/Context/ThemeContext';
+import { ThemeProvider } from './app/Context/ThemeContext';
 
 const App = () => {
     return(
