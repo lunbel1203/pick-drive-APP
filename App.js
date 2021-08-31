@@ -1,27 +1,16 @@
 import React from 'react';
 import { StatusBar } from 'react-native'
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from 'react-native-screens/native-stack';
+import Navigation from './App/Navigations/Navigation';
 
-// Screens
-import LoginScreen from './screens/Login';
-import RegisterScreen from './screens/Register';
-
-const Stack = createNativeStackNavigator();
+// CONTEXT
+import { ThemeProvider } from './App/Context/ThemeContext';
 
 const App = () => {
     return(
-        <NavigationContainer>
-            <StatusBar barStyle="light-content" />
-            <Stack.Navigator 
-                initialRouteName="Login"
-                screenOptions={{headerShown: false}}
-                headerTintColor="#fff"
-            >
-                <Stack.Screen name="Login" component={LoginScreen} />
-                <Stack.Screen name="Register" component={RegisterScreen} />
-            </Stack.Navigator>
-        </NavigationContainer>
+        <ThemeProvider>
+            <StatusBar barStyle="dark-content" />
+            <Navigation />
+        </ThemeProvider>
     )
 }
 

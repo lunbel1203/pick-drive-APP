@@ -1,7 +1,6 @@
 import React from 'react';
 import { 
     StyleSheet, ImageBackground,
-    Dimensions, 
 } from 'react-native';
 
 const BackgroundImage = ({ children, urlImage }) => {

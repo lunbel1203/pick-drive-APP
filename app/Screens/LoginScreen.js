@@ -8,10 +8,10 @@ import {
 import getSettingsApp from '../api/Settings'; 
 
 // COMPONENTS
-import BackgroundImage from '../app/Components/BackgroundImage';
+import BackgroundImage from '../components/BackgroundImage';
 
 // LOGO
-import logo from '../app/src/img/pick-drive-logo.png'
+import logo from '../src/img/pick-drive-logo.png'
 
 
 const { width, height } = Dimensions.get('window');
@@ -50,6 +50,7 @@ const LoginScreen = ({ navigation }) => {
                     <Image 
                         style={styles.logo}
                         source={logo} 
+                        resizeMode="contain"
                     />
                     <TextInput 
                         style={styles.inputs}
