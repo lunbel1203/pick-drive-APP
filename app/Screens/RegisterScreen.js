@@ -3,7 +3,7 @@ import {
     View, Text, StyleSheet, Dimensions, TextInput, Touchablehightlight,
     Image,
 } from 'react-native';
-import BackgroundImage from '../app/Components/BackgroundImage';
+import BackgroundImage from '../Components/BackgroundImage'
 
 import getSettingsApp from '../api/Settings'; 
 

@@ -10,46 +10,50 @@ import { Colors } from '../Styles/Colors'
 
 // SCREENS
 import VehiclesScreen from '../Screens/VehiclesScreen'
-import RentScreen from '../Screens/RentsScreen'
+import RentedScreen from '../Screens/RentedScreen'
 import AccountScreen from '../Screens/AccountScreen'
+import MainStackNavigation from './MainStackNavigation'
+
 
 const Tab = createBottomTabNavigator()
 
-const Navigation = ({ focused }) => {
+const TabNavigation = ({ focused }) => {
     const os = Platform.OS === 'ios' ? 15 : 0
 
     const { colorMamey, colorNaranja ,colorGris } = Colors
     const tabOffsetValue = useRef(new Animated.Value(0)).current
 
+    const screenOptionsStyles = {
+        tabBarShowLabel: false,
+        tabBarStyle: {
+            height: 80,
+            flex: 1,
+            justifyContent: 'center',
+            backgroundColor: 'white',
+            marginHorizontal: 20,
+            paddingHorizontal: 20,
+            borderRadius: 10,
+            position: 'absolute',
+            bottom: 30,
+            shadowColor: '#f5f5f5',
+            shadowOpacity: 0.06,
+            shadowOffset: {
+                width: 10,
+                height: 10,
+            },
+            elevation: 3
+        }
+    }
+
     return (
         <NavigationContainer>
             <Tab.Navigator initialRoute="Vehicles" 
-                screenOptions={{
-                    tabBarShowLabel: false,
-                    tabBarStyle: {
-                        height: 80,
-                        flex: 1,
-                        justifyContent: 'center',
-                        backgroundColor: 'white',
-                        marginHorizontal: 20,
-                        paddingHorizontal: 20,
-                        borderRadius: 10,
-                        position: 'absolute',
-                        bottom: 30,
-                        shadowColor: '#f5f5f5',
-                        shadowOpacity: 0.06,
-                        shadowOffset: {
-                            width: 10,
-                            height: 10,
-                        },
-                        elevation: 3
-                    }
-                }}
+                screenOptions={screenOptionsStyles}
             >
-                <Tab.Screen name="Vehicles" component={VehiclesScreen} 
+                <Tab.Screen name="Vehicles" component={MainStackNavigation} 
                     options={{ 
                         title: "Vehículos", 
-                        tabBarLabel: "Vehículos",
+                        tabBarLabel: "Vehículos", 
                         tabBarIcon: ({ focused }) => (
                             <View style={{
                                 width: '100%',
@@ -83,7 +87,7 @@ const Navigation = ({ focused }) => {
                         }
                     })}
                 />
-                <Tab.Screen name="Rents" component={RentScreen} 
+                <Tab.Screen name="Rented" component={RentedScreen} 
                     options={{ 
                         title: "Mis rentas", 
                         tabBarLabel: "Mis rentas",
@@ -176,4 +180,4 @@ const getWidth = () => {
     return width / 3
 }
 
-export default Navigation;
+export default TabNavigation;

@@ -8,10 +8,10 @@ import {
 import getSettingsApp from '../api/Settings'; 
 
 // COMPONENTS
-import BackgroundImage from '../components/BackgroundImage';
+import BackgroundImage from '../Components/BackgroundImage';
 
 // LOGO
-import logo from '../src/img/pick-drive-logo.png'
+import logo from '../Assets/img/pick-drive-logo.png';
 
 
 const { width, height } = Dimensions.get('window');
