@@ -14,7 +14,9 @@ const images = [
     'http://localhost:1337/uploads/small_toyota_corrolla_2021_4be0d3b0d8.jpg'
 ]
 
-const Details = ( props, navigation ) => {
+const Details = ( props ) => {
+
+    const { navigation } = props;
 
     const { colorMamey, colorGris } = Colors;
 
@@ -59,8 +61,8 @@ const Details = ( props, navigation ) => {
                 width={'80%'}
                 buttonTitle="Rental"
                 images={images}
+                route="TimeRent"
                 navigation={ navigation }
-                route="Checkout"
                 background={ colorMamey }
                 textColor="white"
             />

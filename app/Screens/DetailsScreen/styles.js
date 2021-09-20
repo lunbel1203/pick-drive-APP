@@ -33,11 +33,11 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginVertical: 15,
+        marginVertical: 10,
     },
     subTitle: {
         width: '100%',
-        fontSize: 25,
+        fontSize: 20,
         color: colorMamey
     },
     items: {

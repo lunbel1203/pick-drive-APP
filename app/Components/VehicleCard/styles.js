@@ -38,8 +38,8 @@ const styles = StyleSheet.create({
         marginTop: 20,
         fontSize: 25, 
     },
-    buttonText: {
-        fontSize: 30,
+    priceText: {
+        fontSize: 25,
         color: colorMamey,
     }
 })

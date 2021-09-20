@@ -7,7 +7,7 @@ const { colorMamey, colorNaranja, colorGris, colorNegro } = Colors;
 const styles = StyleSheet.create({
     containerButton: {
         justifyContent: 'center',
-        paddingHorizontal: 50,
+        paddingHorizontal: 20,
         paddingVertical: 15,
         borderRadius: 30,
         justifyContent: 'center',

@@ -6,9 +6,8 @@ import LoginScreen from '../Screens/LoginScreen'
 import RegisterScreen from '../Screens/RegisterScreen'
 import DetailsScreen from '../Screens/DetailsScreen'
 import CheckoutScreen from '../Screens/CheckoutScreen'
-
-import TabNavigation from './TabNavigation'
 import VehiclesScreen from '../Screens/VehiclesScreen'
+import TimeRentScreen from '../Screens/TimeRentScreen'
 
 const Stack = createStackNavigator()
 
@@ -42,6 +41,10 @@ const MainStackNavigation = () => {
             <Stack.Screen 
                 name="Checkout"
                 component={CheckoutScreen}
+            />
+            <Stack.Screen 
+                name="TimeRent"
+                component={TimeRentScreen}
             />
         </Stack.Navigator>
     )

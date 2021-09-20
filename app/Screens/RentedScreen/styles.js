@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginVertical: 15,
+        marginVertical: 10,
     },
     subTitle: {
         width: '100%',
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         borderRadius: 30,
         padding: 30,
-        margin: 20,
+        margin: 10,
         elevation: 3,
     },
     rentedText: {

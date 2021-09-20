@@ -10,7 +10,7 @@ const Price = (price) => {
     return (
         <View>
             <Text 
-                style={ styles.buttonText }
+                style={ styles.priceText }
             >{`$ ${rentPrice}/día`}</Text>
         </View>
     )
