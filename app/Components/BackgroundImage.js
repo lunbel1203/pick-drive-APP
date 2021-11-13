@@ -1,7 +1,7 @@
 import React from 'react';
-import { ImageBackground } from 'react-native';
-
-import styles from './styles';
+import { 
+    StyleSheet, ImageBackground,
+} from 'react-native';
 
 const BackgroundImage = ({ children, urlImage }) => {
     return (
@@ -10,5 +10,14 @@ const BackgroundImage = ({ children, urlImage }) => {
         </ImageBackground>
     )
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+    }
+});
 
 export default BackgroundImage;

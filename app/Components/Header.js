@@ -1,7 +1,5 @@
 import React from 'react'
-import { Text, View } from 'react-native'
-
-import styles from './styles'
+import { StyleSheet, Text, View } from 'react-native'
 
 const Header = () => {
     return (
@@ -10,5 +8,14 @@ const Header = () => {
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    container: {
+        paddingVertical: 20,
+    },
+    subTitle: {
+        fontSize: 25,
+    }
+})
 
 export default Header
