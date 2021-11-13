@@ -1,14 +1,25 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, TouchableHighlight } from 'react-native'
 
-const Checkout = () => {
+const Checkout = ({ navigation }) => {
     return (
-        <View>
+        <View style={ styles.container }>
             <Text>Checkout</Text>
+            <TouchableHighlight 
+                onPress={() => navigation.navigate('Thanks') }
+            >
+                <Text>Pagar</Text>
+            </TouchableHighlight>
         </View>
     )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    }
+})
 
 export default Checkout
